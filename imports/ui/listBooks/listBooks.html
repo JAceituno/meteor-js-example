@@ -1,0 +1,10 @@
+<template name="listBooks">
+  {{#each books}}
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{title}}</div>
+      <div class="collapsible-body"><p>{{description}}</p></div>
+    </li>
+  </ul>
+  {{/each}}
+</template>
