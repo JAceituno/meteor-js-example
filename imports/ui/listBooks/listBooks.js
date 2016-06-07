@@ -1,5 +1,9 @@
 import "./listBooks.html";
+<<<<<<< HEAD
+import { Books } from '../../api/books.js';
+=======
 import { Books } from '../../api/book.js';
+>>>>>>> e92b29f64c00be0ba62f8374c17c3bf9723866bc
 
 Template.listBooks.onRendered(function(){
   $('.collapsible').collapsible({
