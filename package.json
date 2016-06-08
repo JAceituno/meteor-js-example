@@ -1,5 +1,5 @@
 {
-  "name": "cualquiercosa",
+  "name": "cosas",
   "private": true,
   "scripts": {
     "start": "meteor run"

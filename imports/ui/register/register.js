@@ -12,11 +12,10 @@ Template.register.events({
         password: $("#passwordInput").val(),
         profile:profile
       }
-  }
-});
+      Accounts.createUser(user, function(err){
+        if(!err){
 
-Accounts.createUser(user, function(err){
-  if(!err){
-
+        }
+      });
   }
 });

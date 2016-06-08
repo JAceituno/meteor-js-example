@@ -7,7 +7,6 @@ Template.login.events({
         email: $("#emailInput").val(),
         password: $("#passwordInput").val()
       }
+      Meteor.loginWithPassword(user, callback);
   }
 });
-
-Meteor.loginWithPassword(user, callback);
