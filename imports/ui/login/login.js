@@ -7,6 +7,12 @@ Template.login.events({
         email: $("#emailInput").val(),
         password: $("#passwordInput").val()
       }
-      Meteor.loginWithPassword(user, callback);
+      Meteor.loginWithPassword($("#emailInput").val(), $("#passwordInput").val(), function(error){
+        if(error){
+          Materialize.toast("El correo electrónico y/o contraseña que has introducido son incorrectos.", 4000);
+        }else{
+          Materialize.toast("Login Successfully", 4000);
+        }
+      });
   }
 });

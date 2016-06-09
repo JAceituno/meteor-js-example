@@ -10,11 +10,13 @@ Template.register.events({
         username: $("#emailInput").val(),
         email: $("#emailInput").val(),
         password: $("#passwordInput").val(),
-        profile:profile
+        profile: Profile
       }
-      Accounts.createUser(user, function(err){
-        if(!err){
-
+      Accounts.createUser(User, function(err){
+        if(err){
+          Materialize.toast('User already exists', 4000);
+        }else{
+          Materialize.toast('Registrado Correctamente', 4000);
         }
       });
   }

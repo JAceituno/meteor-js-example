@@ -1,16 +1,25 @@
 <template name="login">
-<!-- Modal Trigger -->
-<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-<!-- Modal Structure -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <input id = "emailInput" type="text" class="col s12 m3 l3" placeholder="email">
-    <input id = "passwordInput" type="password" class="col s12 m3 l3" placeholder="password">
+<div class="row">
+  <div class="offset-s4 col s4">
+    <div class="card">
+      <div class="container center">
+        <h4>Bienvenido usuario</h4>
+        <div class="row">
+          <div class="input-field offset-s2 col s8">
+            <input id = "emailInput" type="text" class="validate">
+            <label for="emailInput">email</label>
+          </div>
+          <div class="input-field offset-s2 col s8">
+            <input id = "passwordInput" type="password" class="validate">
+            <label for="passwordInput">password</label>
+          </div>
+        </div>
+      </div>
+      <div class="container center">
+        <a id="login" class="waves-effect waves-light btn indigo"><i class="material-icons left">lock_open</i>LOGIN</a>
+      </div>
+    </div>
   </div>
-  <div class="modal-footer">
-    <a id="login" href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Login</a>
-  </div>
+  <div class="col s4"></div>
 </div>
 </template>
